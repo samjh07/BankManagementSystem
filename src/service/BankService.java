@@ -1,13 +1,11 @@
 package service;
 
-import model.Account;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class BankService {
-
+    
     private List<Account> accounts;
 
     private int nextAccountNumber = 1001;
