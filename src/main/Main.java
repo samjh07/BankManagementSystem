@@ -1,20 +1,11 @@
 package main;
 
-import exception.AccountNotFoundException;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        try {
+        Menu menu = new Menu();
+        menu.start();
 
-            throw new AccountNotFoundException(
-                    "Account not found!");
-
-        } catch (AccountNotFoundException e) {
-
-            System.out.println(e.getMessage());
-
-        }
     }
 }
